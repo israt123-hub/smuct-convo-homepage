@@ -1,0 +1,44 @@
+/* Glassmorphism utility */
+.glass-panel {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.glass-panel-dark {
+    background: rgba(15, 23, 42, 0.75);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Gradient Text Helper */
+.gradient-text {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* Custom Scrollbar for Workflow Horizontal View */
+.workflow-scroll::-webkit-scrollbar {
+    height: 8px;
+}
+.workflow-scroll::-webkit-scrollbar-track {
+    background: #f1f5f9;
+    border-radius: 9999px;
+}
+.workflow-scroll::-webkit-scrollbar-thumb {
+    background: linear-gradient(to right, #ec4899, #8b5cf6, #3b82f6);
+    border-radius: 9999px;
+}
+
+/* Glowing Border Animation effect */
+.glow-card {
+    position: relative;
+    transition: all 0.3s ease;
+}
+.glow-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 30px -10px rgba(99, 102, 241, 0.3);
+}
